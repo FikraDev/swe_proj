@@ -1,0 +1,23 @@
+*{
+    /* background-color: #171717;
+    color: #ffff; */
+
+    background-color: #2A1B3D;
+    color: #fff;
+}
+
+.hdr{
+    /* width: 100%; */
+    height: auto;
+}
+
+.regHdr{
+    color: #FF6138;
+}
+
+p{
+    font-size: 1.2rem;
+    
+    font-weight: bold;
+}
+
