@@ -1,23 +1,43 @@
-*{
-    /* background-color: #171717;
-    color: #ffff; */
-
+* {
     background-color: #2A1B3D;
     color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: auto;
 }
 
-.hdr{
-    /* width: 100%; */
+.hdr {
     height: auto;
 }
 
-.regHdr{
+.regHdr {
     color: #FF6138;
 }
 
-p{
-    font-size: 1.2rem;
-    
-    font-weight: bold;
+p {
+    font-size: 1.4rem;
+
+    /* font-weight: bold; */
 }
 
+.txtp {
+    line-height: 1.8rem;
+}
+
+
+
+.btnn-grad {
+    /* margin-left: 1050px; */
+    padding: 1px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0 0 15px rgb(117, 40, 148);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.reg-link:hover {
+    color: tomato;
+}
