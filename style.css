@@ -41,3 +41,145 @@ p {
 .reg-link:hover {
     color: tomato;
 }
+/*styling User Interface page*/
+
+#mm {
+    max-width: 515px;
+  
+    color: rgb(99, 240, 56);
+    border-width: 8px;
+    border-style: solid;
+    border-image:
+        linear-gradient(to bottom,
+            red,
+            rgba(9, 116, 111, 0.109)) 1 100%;
+    float: left;
+    clear: both;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 63px;
+}
+
+#mm img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.btnn-grad {
+    /* margin-left: 1050px; */
+    padding: 1px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: 4px solid rgb(164, 46, 185);
+    color: white;
+    box-shadow: 0 0 15px rgb(117, 40, 148);
+    border-radius: 20px;
+    display: inline-block;
+
+
+}
+
+
+a {
+    display: block;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    font-size: 14pt;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: visible;
+
+
+}
+
+.reg-link:hover {
+    color: tomato;
+}
+
+.mm-link {
+    color: rgb(238, 238, 238);
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: rgb(245, 105, 5);
+}
+
+.mm-link:hover {
+    color: tomato;
+}
+
+#para p {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(50.4deg, rgba(194, 0, 39, 1) 0.8%, rgba(10, 35, 104, 1) 99.4%);
+    padding-bottom: 280px;
+    padding-top: 169px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Styling Security Engineering Page*/
+
+#jb-img-frm {
+    
+    padding: 1rem;
+    color: rgb(99, 240, 56);
+    border-width: 8px;
+    border-style: solid;
+    border-image:
+        linear-gradient(to bottom,
+            red,
+            rgba(9, 116, 111, 0.109)) 1 100%;
+    float: left;
+    clear: both;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 22px;
+}
+
+#jb{
+    background-image: linear-gradient(50.4deg, rgba(194, 0, 39, 1) 0.8%, rgba(10, 35, 104, 1) 99.4%);
+    padding-bottom: 265px;
+    padding-top: 169px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#paraj p {
+
+    background-image: linear-gradient(50.4deg, rgba(194, 0, 39, 1) 0.8%, rgba(10, 35, 104, 1) 99.4%);
+    padding-bottom: 265px;
+    padding-top: 169px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#jb-img{
+    width: 410px;
+}
+#jb-link {
+    color: rgb(238, 238, 238);
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: rgb(245, 105, 5);
+}
+
+#jb-link:hover {
+    color: tomato;
+}
+
+#jb-img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/* 
+.vl {
+    border-left: 6px;
+    height: 55px;
+    margin-left: 50px;
+  } */
