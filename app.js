@@ -31,7 +31,7 @@ function checkEmail() {
     }
     else {
         alert("Email Format Invalid")
-        window.location.href = "./index.html"
+        window.location.href = "index.html"
     }
 }
 
@@ -52,7 +52,7 @@ ddlsem.addEventListener('change', () => {
 btnsubmit.addEventListener('click', (e) => {
 
     e.preventDefault()
-    checkEmail();
+    
    
     if (fname.value !== '' && lname.value !== '' && email1.value !== '' && company.value !== '') {
 
@@ -67,6 +67,8 @@ btnsubmit.addEventListener('click', (e) => {
     }else{
         alert("There are empty fields!!!")
     }
+
+    checkEmail();
  
 })
 

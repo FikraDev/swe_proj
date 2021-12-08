@@ -191,4 +191,5 @@ a {
 #timebox{
     background-color:#2A1B3D;
     color: #fff;
+    resize: none;
 }
