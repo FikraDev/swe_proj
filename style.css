@@ -13,6 +13,10 @@
     color: #FF6138;
 }
 
+/* #navbarNav ul li a{
+    color: #FF6138;
+} */
+
 p {
     font-size: 1.4rem;
 
@@ -183,3 +187,8 @@ a {
     height: 55px;
     margin-left: 50px;
   } */
+
+#timebox{
+    background-color:#2A1B3D;
+    color: #fff;
+}

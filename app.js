@@ -1,15 +1,18 @@
 const form = document.querySelector('.myform');
 const fname = document.querySelector('.fname');
 const lname = document.querySelector('.lname');
-const company = document.querySelector('.company');
-const contactnum = document.querySelector('.contactnum');
 const email1 = document.querySelector('.email1');
-const email2 = document.querySelector('.email2');
+const company = document.querySelector('.company');
+let blankInput = document.querySelector('#timebox');
 
-const radiomale = document.querySelector('.radiomale');
-const radiofemale = document.querySelector('.radiofemale');
 
-const select1 = document.querySelector('.select1');
+
+const select1 = document.querySelector('#ddlsem');
+
+const radiobtn = document.getElementsByName('genderval');
+
+
+
 
 const check1 = document.querySelector('.check1');
 const check2 = document.querySelector('.check2');
@@ -22,37 +25,49 @@ const numPattern = ('^[0-9]+$');
 
 
 
-//functions
-
-function checkInputs(){
-    if (fname.value || lname.value || company.value || contactnum.value || email1.value || email2.value !==''){
-        return true
-    }else{
-        alert('You Have Empty Values')
-    }
-}
-
-
 function checkEmail() {
-    if (emailPattern.test(email1.value && email2.value)) {
+    if (emailPattern.test(email1.value)) {
         return true;
     }
     else {
         alert("Email Format Invalid")
+        window.location.href = "./index.html"
     }
 }
 
-function checkNum(){
-    if (contactnum !== numPattern){
-        alert('Numbers Only')
+//Dropdown box
+
+ddlsem.addEventListener('change', () => {
+    if (ddlsem.value === "1") {
+        blankInput.textContent = ddlsem.options[ddlsem.selectedIndex].text
+    } else if (ddlsem.value === '2') {
+        blankInput.textContent = ddlsem.options[ddlsem.selectedIndex].text
+    } else if (ddlsem.value === '3') {
+        blankInput.textContent = ddlsem.options[ddlsem.selectedIndex].text
     }
-}
+})
 
 
-btnsubmit.addEventListener('click',()=>{
-    checkInputs()
-    checkEmail()
-    checkNum()
+
+btnsubmit.addEventListener('click', (e) => {
+
+    e.preventDefault()
+    checkEmail();
+   
+    if (fname.value !== '' && lname.value !== '' && email1.value !== '' && company.value !== '') {
+
+        if(ddlsem.value === "1"){
+            window.location.href = "./securityengr.html"
+        }else if(ddlsem.value === '2'){
+            window.location.href = "./userinterface.html"
+        } else if(ddlsem.value === '3'){
+            window.location.href = "./computeraided.html"
+        } 
+       
+    }else{
+        alert("There are empty fields!!!")
+    }
+ 
 })
 
 
