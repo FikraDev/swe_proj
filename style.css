@@ -5,6 +5,10 @@
     width: auto;
 }
 
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .hdr {
     height: auto;
 }
@@ -50,7 +54,7 @@ p {
 #mm {
     max-width: 515px;
   
-    color: rgb(99, 240, 56);
+    /* color: rgb(99, 240, 56); */
     border-width: 8px;
     border-style: solid;
     border-image:
@@ -102,7 +106,7 @@ a {
 }
 
 .mm-link {
-    color: rgb(238, 238, 238);
+    color: rgb(99, 240, 56);;
     padding: 1px 2px;
     text-align: center;
     text-decoration: none;
@@ -192,4 +196,16 @@ a {
     background-color:#2A1B3D;
     color: #fff;
     resize: none;
+}
+
+.navstyle{
+    color: #FF6138 !important;
+}
+
+.navmar{
+    margin-right: 15px !important;
+}
+
+.marinta{
+    color:#fff !important;
 }

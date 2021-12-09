@@ -25,14 +25,18 @@ const numPattern = ('^[0-9]+$');
 
 
 
-function checkEmail() {
-    if (emailPattern.test(email1.value)) {
-        return true;
+try {
+    function checkEmail() {
+        if (emailPattern.test(email1.value)) {
+            return true;
+        }
+        else {
+            alert("Email Format Invalid")
+            window.location.href = "index.html"
+        }
     }
-    else {
-        alert("Email Format Invalid")
-        window.location.href = "index.html"
-    }
+} catch (error) {
+    alert(error)
 }
 
 //Dropdown box
@@ -52,25 +56,35 @@ ddlsem.addEventListener('change', () => {
 btnsubmit.addEventListener('click', (e) => {
 
     e.preventDefault()
-    
-   
+
     if (fname.value !== '' && lname.value !== '' && email1.value !== '' && company.value !== '') {
 
-        if(ddlsem.value === "1"){
+        if (ddlsem.value === "1") {
             window.location.href = "./securityengr.html"
-        }else if(ddlsem.value === '2'){
+        } else if (ddlsem.value === '2') {
             window.location.href = "./userinterface.html"
-        } else if(ddlsem.value === '3'){
+        } else if (ddlsem.value === '3') {
             window.location.href = "./computeraided.html"
-        } 
-       
-    }else{
-        alert("There are empty fields!!!")
+        } else if (ddlsem.value === '0') {
+            alert('No Valid Seminar Selection Made')
+        } else {
+            alert("There are empty fields!!!")
+        }
     }
 
     checkEmail();
- 
 })
+
+try {
+
+    btncncl.addEventListener('click', () => {
+        location.reload()
+    })
+
+} catch (error) {
+    alert("Error Reloading Page!")
+
+}
 
 
 
