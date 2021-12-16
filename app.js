@@ -9,7 +9,8 @@ let blankInput = document.querySelector('#timebox');
 
 const select1 = document.querySelector('#ddlsem');
 
-const radiobtn = document.getElementsByName('genderval');
+const radiobtn1 = document.querySelector('.radiobtn1');
+const radiobtn2 = document.querySelector('.radiobtn2');
 
 
 
@@ -23,20 +24,33 @@ const btncncl = document.querySelector('.btncncl');
 const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const numPattern = ('^[0-9]+$');
 
-
-
-try {
-    function checkEmail() {
-        if (emailPattern.test(email1.value)) {
-            return true;
-        }
-        else {
-            alert("Email Format Invalid")
-            window.location.href = "index.html"
-        }
+function chkGender() {
+    if (radiobtn1.checked || radiobtn2.checked) {
+        return true
+    } else {
+        alert('No Gender Selected!')
     }
-} catch (error) {
-    alert(error)
+}
+
+
+function chkBoxes() {
+    if (check1.checked || check2.checked || check3.checked) {
+        return true
+    } else{
+        alert('No Mode of Attendance Selected')
+    }
+}
+
+
+
+function checkEmail() {
+    if (emailPattern.test(email1.value)) {
+        return true;
+    }
+    else {
+        alert("Email Format Invalid")
+        window.location.href = "index.html"
+    }
 }
 
 //Dropdown box
@@ -73,6 +87,8 @@ btnsubmit.addEventListener('click', (e) => {
     }
 
     checkEmail();
+    chkGender();
+    chkBoxes();
 })
 
 try {
@@ -85,6 +101,7 @@ try {
     alert("Error Reloading Page!")
 
 }
+
 
 
 
